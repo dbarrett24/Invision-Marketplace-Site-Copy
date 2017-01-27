@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body, button{
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/*----------HEADER-----------*/
+.header-container {
+    height: 40px;
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.nav{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    height: 40px;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px 25px;
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1da5f4;
+    border-color: #1da5f4;
+    border-radius: 10px;
+    transition: all .51s;
+}
+
+.cart {
+    height: 40px;
+    border: 1.5px solid #fff;
+    color: #fff;
+}
+
+.cart:hover {
+    background-color: #f41d56;
+    border-color: #f41d56;
+    border-radius: 10px;
+    transition: all .51s;
+}
+
+/*----------HERO IMAGE-----------*/
+.hero {
+    height:100vh;
+    width:100%;
+    background: url("https://s3.amazonaws.com/www-assets.invisionapp.com/marketplace/assets/mp-hero-07.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketplace-svg {
+    width:80%;
+    height: 18%;
+    margin: auto 0;
+}
+
+.bottom-logo {
+    width:75px;
+    height:75px;
+    position: absolute;
+    bottom:60px;
+}
+
+.hero-created-by {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.hero-created-by a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+
+/*----------PRODUCT PAGE-----------*/
+.product-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width:100%;
+    padding-top: 10px;
+    margin: 2.5px;
+    
+}
+
+.product img:before, .effect8:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.product img:after{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+@media (min-width: 650px) {
+    .product {
+        width: 49%;
+    }
+}
+
+@media (min-width: 840px) {
+    .product {
+        width: 30%;
+    }
+}
